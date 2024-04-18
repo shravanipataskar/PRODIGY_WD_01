@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My fashion landing page</title>
+        <link rel="stylesheet" href="landingpage_style.css">
+        <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+        
+        
+    </head>
+    <body>
+        <header >
+            <div class="logo">My<span>Fashion</span></div>
+            <div class="h1">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar" >
+                <ul >
+                    <li class="hideOnmobile">
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut1(this)"  class="active" >Home</a>
+                    </li>
+                    <li class="hideOnmobile">
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">About us</a>
+                    </li>
+                    <li class="hideOnmobile">
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Collections</a>
+                    </li>
+                    <li class="hideOnmobile">
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Trends</a>
+                    </li>
+                    <li class="hideOnmobile">
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Contact us</a>
+                    </li>
+                    <li class="hideOnmobile">
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active" onclick="showSiderbar()"><svg xmlns="http://www.w3.org/2000/svg"   height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                    </li>
+                    <!--i class="fa-solid fa-cart-shopping" style="color: aliceblue;margin-top: 15px;"></i>   
+                    <i class="fa-solid fa-magnifying-glass"style="color: aliceblue;margin-top: 15px;padding-left: 20px;"></i!-->
+                </ul>
+                
+            </nav>
+            <nav class="sidebar" >
+                <ul >
+                    <li onclick="hideSidebar()">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" class="c1"viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                    </li>
+                    <li>
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut1(this)"  class="active" >Home</a>
+                    </li>
+                    <li>
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">About us</a>
+                    </li>
+                    <li>
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Collections</a>
+                    </li>
+                    <li>
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Trends</a>
+                    </li>
+                    <li>
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">LOGIN</a>
+                    </li>
+                   
+                    <!--i class="fa-solid fa-cart-shopping" style="color: aliceblue;margin-top: 15px;"></i>   
+                    <i class="fa-solid fa-magnifying-glass"style="color: aliceblue;margin-top: 15px;padding-left: 20px;"></i!-->
+                </ul>
+                
+            </nav>
+           
+        </header>
+        <div class="content">
+            <pre><br>Find The 
+Best Fashion
+Style For You</pre><br><br><br><br><br><br><br>
+            <p>
+                Just explor our Collections <br>
+                for trendy cool cloths <br>
+                that make you look amazing <br>
+                & cool.Find your choice 
+            </p><br><br><br><br><br><br><br><br>
+        <div class="b1">
+         <button>Buy Now</button> 
+            <button>Explor</button><br><br><br>
+            <div class="fsocial-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <br><br><br><br>
+            </div>
+           
+        </div>
+        <div class="img">
+            <img src="final_landing_pahe-removebg-preview.png" height="70%" width="90%">
+        </div>
+        <script src="landing.js"></script>   
+        <script>
+            function showSiderbar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display ='flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display ='none'
+
+            }
+
+        </script>
+    </body>
+
+</html>
